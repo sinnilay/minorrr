@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background: url(./image.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img-wrapper{
+    background-image: url('./image.jpg');
+    filter: blur(10px); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.content-wrapper{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .5px;
+    height: 90vh;
+    width: 60%;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+    color: #ff0000;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+   
+}
+p{
+    margin: 20px;
+}
+.att{
+    font-size: 45px;
+    color: black;
+    position: absolute;
+    top: 130px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.b1{
+    width: 700px;
+    height: 140px;
+    font-size: 35px;
+   
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom: 50%;
+    left: 35%;
+    font-family: Arial, Helvetica, sans-serif;    
+    background-color: #030381;
+    color: #c27715;
+    border-radius: 25px ;
+    
+   
+}
+.b2{
+    width: 700px;
+    height: 140px;
+    font-size: 35px;
+   
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom: 30%;
+    left: 35%;
+    font-family: Arial, Helvetica, sans-serif;    
+    background-color: #c27715;
+    
+    color: #030381;
+    border-radius: 25px ;
+}
+.b1:hover{
+    cursor: pointer;
+}
+.b2:hover{
+    cursor: pointer;
+}
+.pencil{
+    position: absolute;
+    left: 90%;
+    top: 88%;
+    border-radius: 20px ;
+    background-color: #ff0000;
+    height: 80px;
+    width: 10%;
+    
+    
+}
+h2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    letter-spacing: .6px;
+
+    
+}
+.pencil:hover{
+    cursor: pointer;
+    color: cadetblue;
+    background-color: black;
+}
+
+
+
+
+</style>
 </head>
 <body>
+<div class="img-wrapper">
     
+</div>
+<div class="content-wrapper">
+   <p> Welcome Teacher_Username !!</p>
+    <p class="att"><u>Please select an option for your further operations</u></p>
+    
+    
+</div>
+
+<button class="b1"> <b>Sign up new faculty </b></button> 
+    
+    <button class="b2"><b>Upload student result</b></button>
+
+    <div class="pencil">
+        <h2><b>LOGOUT </b></h2>
+    </div>
+    
+   
+
+
 </body>
 </html>
