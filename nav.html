@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            border: 0;
+        }
+        .img-wrapper{
+    background-image: url('./image.jpg');
+    filter: blur(10px); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.content-Wrapper{
+    background-color: rgb(0, 47, 255);
+    color: aliceblue;
+    position: absolute;
+    bottom: 93%;
+    width: 100%;
+    display: flex;
+    gap: 35%;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.headding{
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.sym{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+    /* background-color: antiquewhite; */
+}
+button{
+    border-radius: 10px;
+    padding: 8px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    font-size: x-large;
+}
+button:hover{
+    cursor: pointer;
+}
+span:hover{
+    background-color: rgb(91, 111, 148);
+    cursor: pointer;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 190%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #000000;
+    /* padding: 20px; */
+    /* width: 80%; */
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    width: 200px;
+  }
+  .info-box h3 {
+    margin-top: 0;
+  } 
+  .service:hover .info-box {
+    opacity: 1;
+    visibility: visible;
+  }
+  .circle {
+    color: #000000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; 
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .account {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    position: absolute;
+    top: 350%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    background-color: #efc41a;
+    color: #000000;
+    /* padding: 20px; */
+    /* width: 80%; */
+    height: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    width: 250px;
+  }
+  .account h3 {
+    margin-top: 0;
+  } 
+  .circle:hover .account {
+    opacity: 1;
+    visibility: visible;
+  }
+  .data{
+    background-color: antiquewhite;
+    height: 50px;
+    width:  50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="img-wrapper"></div>
+    <div class="content-Wrapper">
+     <div class="headding"> 
+        <span> <h2>HOME</h2></span>
+        <span class="service"> <h2>Services</h2>
+            <div class="info-box">
+                <h3>Upload result</h3>
+                <h3>Sign up new Faculty</h3>
+              </div>
+        </span>
+        <span> <h2>Raise a question</h2></span>
+        <span> <h2>About</h2></span>
+         </div>
+    
+      
+     <div class="sym">
+       
+          <div class="circle">
+            <p>S</p>
+            <div class="account">
+                <div class="data">
+                    <p>S</p>
+                </div>
+                 <span><b>SHIVAM PATHAK</b></span>
+                <span><b>Shivam@gmail.com</b></span>
+              </div>
+          </div>
+          
+          
+        <button>
+          <b> Logout</b>
+        </button>
+     </div> 
+    </div>
+    
+</body></h2> L
+</html>
