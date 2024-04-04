@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Form</title>
+<style>
+    #result{
+        width: 50px;
+    }
+    /* input{
+        border-radius: 50px;
+    } */
+    body {
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    margin: 0;
+}
+
+.blur-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./image.jpg') center/cover no-repeat;
+    filter: blur(5px); 
+    z-index: -1;
+}
+
+.form-container {
+    background-color: antiquewhite;
+    max-width: 1500px ;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+
+    .form-container {
+       background-color: antiquewhite;
+       /* height: 500px; */
+         max-width: 1500px ;
+        margin: 80px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+    }
+    .form-container h2 {
+        text-align: center;
+    }
+    .form-row {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .form-row input {
+
+        background-color: hsla(0, 1%, 31%, 0.647);
+        flex: 1;
+        margin-right: 10px;
+        height: 40px; 
+        border: 1.5px solid #7777779b; 
+        border-radius: 35px;
+        padding: 5px 10px;
+    }
+    #first{
+        background-color: hsla(0, 1%, 31%, 0.647);
+        border-radius: 25px;
+        height: 50px;
+        width: 355px;
+    }
+    #subjects-container {
+        margin-bottom: 20px;
+    }
+    .subject-row {
+        display: flex;
+        gap: 22px;
+        margin-bottom: 20px;
+    }
+    .subject-row input {
+        margin-right: 15px;
+    }
+    input[type="submit"],
+    button {
+        height: 40px; 
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #first{
+        
+        border-radius: 20px;
+    }
+    /* input[type="submit"]:hover,
+    button:hover {
+       
+    } */
+    label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px; 
+        color: #555; 
+        margin-right: 10px; 
+        font-weight: bold;
+    }
+    .bt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sub{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        width: 150px;
+        background-color: rgba(244, 69, 5, 0.914);
+        color: blue;
+        border-radius: 30px;
+    }
+    #second{
+        background-color: red;
+    }
+    #result{
+        width: 10px;
+    }
+    #student-form input{
+        font-size: large;
+        color: black;
+    }
+   
+    header{
+        color: black;font-size: larger;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        background-color: #81b2e2;
+    }
+    h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   .gh{
+    display: flex;
+    gap: 150px;
+   }
+  
+    #result{
+        width: 250px;
+        height: 45px;
+        background-color: hsla(0, 1%, 31%, 0.647);
+        border: 0;
+        border-radius: 30px;
+    }
+    #total{
+        width: 250px;
+        height: 45px;
+        background-color: hsla(0, 1%, 31%, 0.647);
+        border: 0;
+        border-radius: 30px;  
+    }
+  .one{
+    display: flex;
+        gap: 70px;
+  }
+  .two{
+    
+        display: flex;
+        gap: 30px;
+
+  }
+</style>
+</head>
+<body>
+    <div class="blur-container"></div>
+<div class="form-container">
+    <header> <h2>Enter the data here</h2></header>
+    <br>
+    <br>
+   
+   
+    <form id="student-form">
+        <div class="form-row">
+            <label for="student_name">Student Name:</label>
+            <input type="text" name="student_name" id="student_name">
+            
+            <label for="enrollment_no">Enrollment No:</label>
+            <input type="text" name="enrollment_no" id="enrollment_no">
+            
+            <label for="course_id">Course ID:</label>
+            <input type="text" name="course_id" id="course_id">
+        </div>
+        <div class="form-row">
+            <label for="course_name">Course Name:</label>
+            <input type="text" name="course_name" id="course_name">
+            
+            <label for="semester">Semester:</label>
+            <input type="text" name="semester" id="semester">
+            
+            <label for="exam">Exam:</label>
+            <input type="text" name="exam" id="exam">
+        </div>
+        <div id="subjects-container">
+            <div class="subject-row">
+                <label for="subject_name">Subject Name:</label>
+                <input type="text" name="subject_name[]" id="first">
+                
+                <label for="subject_marks">Marks:</label>
+                <input type="text" name="subject_marks[]" id="first">
+                <label for="subject_marks">PDF:</label>
+                <input type="file" name="fileToUpload" id="first">
+                
+                <button type="button" id="add-subject">+</button>
+            </div>
+            
+            
+        </div>
+        
+        <div class="gh">
+            <span class="one">
+            <label for="result">Result:</label>
+            <input type="text" name="result" id="result">
+            </span>
+            <span class="two">
+            <label for="total">Total:</label>
+            <input type="text" name="total" id="total">
+            </span>
+        </div>
+        <br>
+        <div class="bt">
+        <button type="submit" class="sub"><b> Submit </b></button>
+       </div>
+    </form>
+</div>
+<script>
+    document.getElementById('add-subject').addEventListener('click', function() {
+        var subjectsContainer = document.getElementById('subjects-container');
+        var subjectRow = document.createElement('div');
+        subjectRow.classList.add('subject-row');
+        subjectRow.innerHTML = `<label for="subject_name">Subject Name:</label>
+                                <input type="text" name="subject_name[]" id="first">
+                                <label for="subject_marks">Marks:</label>
+                                <input type="text" name="subject_marks[]" id="first">
+                                <label for="subject_marks">PDF:</label>
+                              <input type="file" name="fileToUpload" id="first">
+                                <button type="button" class="remove-subject" id="second">-</button>`;
+        subjectsContainer.appendChild(subjectRow);
+    });
+
+    document.getElementById('student-form').addEventListener('click', function(e) {
+        if (e.target.classList.contains('remove-subject')) {
+            e.target.parentNode.remove();
+        }
+    });
+
+</script>
+</body>
+</html>
